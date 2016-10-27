@@ -1,5 +1,5 @@
 #source("c:\\myR\\stockutil_win.R")
-source("/home/xuyang/myR/stockhistory/myR/stockUtil_win.R")
+source("stockUtil_win.R")
 source("s.dongliang.R")
 source("s.nmm.R")
 
