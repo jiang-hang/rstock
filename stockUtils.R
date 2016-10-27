@@ -391,7 +391,5 @@ codeInZhishu<-function(code,zsSet)
 }
 #流通股
 
-#source("sfeatures.R")
-
 
 
