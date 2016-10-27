@@ -1471,5 +1471,3 @@ featureBat<-function(codeset="bankuai\\codes1.txt",n=120,myfunc=ene,fname="fname
     return(res)
 }
 
-
-source("s.dongliang.R")

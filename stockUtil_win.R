@@ -13,7 +13,8 @@ library(ggplot2)
 
 
 #setwd("c:\\myR")
-setwd("/home/xuyang/myR/stockhistory/myR")
+#setwd("/home/xuyang/myR/stockhistory/myR")
+setwd("./")
 
 #default options
 options(stringsAsFactors=F)
@@ -395,7 +396,6 @@ codeInZhishu<-function(code,zsSet)
 
 source("tdxBankuai.R")
 source("stockfunc.R")
-source("s.nmm.R")
 #source("sfeatures.R")
 
 
