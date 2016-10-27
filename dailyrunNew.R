@@ -1,5 +1,9 @@
 #source("c:\\myR\\stockutil_win.R")
+
+source("globals.R")  #it is required by stockUtil_win.R
 source("stockUtil_win.R")
+source("tdxBankuai.R")
+source("stockfunc.R")
 source("s.dongliang.R")
 source("s.nmm.R")
 

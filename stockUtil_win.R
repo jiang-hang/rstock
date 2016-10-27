@@ -12,13 +12,10 @@ library(ggplot2)
 #function to load the hist data
 
 
-#setwd("c:\\myR")
-#setwd("/home/xuyang/myR/stockhistory/myR")
 setwd("./")
 
 #default options
 options(stringsAsFactors=F)
-source("globals.R")
 
 getHgFile<-function(zhibiao){
     if (g_hongguangFilesLoaded==0){
@@ -394,8 +391,6 @@ codeInZhishu<-function(code,zsSet)
 }
 #流通股
 
-source("tdxBankuai.R")
-source("stockfunc.R")
 #source("sfeatures.R")
 
 
