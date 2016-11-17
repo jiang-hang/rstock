@@ -62,10 +62,20 @@ loadshizhiBk<-function(){
 
 loadlinfo<-function()
 {
-    linfo=read.table("C:\\genData\\latest_cninfo\\linfoAll.txt",head=T,sep=",")
-    names(linfo)<-c("code","zguben","ltguben","gjguben","frguben","fqrguben","zpguben","bguben","hguben","eps","zbgongji","wfplirun","jzcsyl","jzc")
+    linfo=read.table("./codes.txt",head=T,sep="\t")
+    #names(linfo)<-c("code","zguben","ltguben","gjguben","frguben","fqrguben","zpguben","bguben","hguben","eps","zbgongji","wfplirun","jzcsyl","jzc")
     return(linfo)
 }
+
+
+#for all the info , there should be a column named as "code"
+#it will be used for merging later
+loadInfo<-function(infoFile,head=T,sep=",")
+{
+    info=read.table(infoFile,head=head,sep=sep)
+    return(info)
+}
+
 loadcodeset<-function(codeset="C:\\myR\\bankuai\\codes.txt"){
     codes<-scan(codeset,what="")
     return(codes)

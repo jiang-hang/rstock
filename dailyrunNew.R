@@ -10,8 +10,11 @@ source("s.nmm.R")
 aa=dongLiangSelect("bankuai2/chuangye300.txt",p=23,q=9,from="2010-01-01",to=(Sys.Date()+1))
 bb=aa[which(aa$date == tail(aa[order(aa$date),],1)$date) , ]  #the data for the last month
 bb=bb[order(bb$rocp),]
-top=as.numeric(tail(bb,10)$code)
+top=as.numeric(tail(bb,30)$code)
 savecodeset(top,"chuangyeDongLiangTop.txt")
+
+bot=as.numeric(head(bb,30)$code)
+savecodeset(bot,"chuangyeDongLiangBot.txt")
 
 #aa=dongLiangSelect("bankuai2/hushen300.txt",p=23,q=2,from="2010-01-01",to=(Sys.Date()+1))
 #bb=aa[which(aa$date == tail(aa[order(aa$date),],1)$date) , ]  #the data for the last month
